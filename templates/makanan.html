@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+ <header class="hero">
+        <h1>Destinasi</h1>
+        <p>kuliner</p>
+    </header>
+    <section class="makanan-container">
+        <!-- Enbal -->
+        <a href="/makanan/enbal" class="makanan-link">
+            <div class="makanan-item">
+                <img src="{{ url_for('static', filename='files/Enbal.png') }}" alt="Enbal">
+                <h3>Enbal</h3>
+            </div>
+        </a>
+
+        <!-- Ikan Bakar Kei -->
+        <a href="/makanan/ikan-bakar" class="makanan-link">
+            <div class="makanan-item">
+                <img src="{{ url_for('static', filename='files/ikan_bakar.png') }}" alt="Ikan Bakar Kei">
+                <h3>Ikan Bakar Kei</h3>
+            </div>
+        </a>
+
+        <!-- Ikan Kuah Kuning -->
+        <a href="/makanan/ikan-kuah-kuning" class="makanan-link">
+            <div class="makanan-item">
+                <img src="{{ url_for('static', filename='files/ikan_kuah_kuning.png') }}" alt="Ikan Kuah Kuning">
+                <h3>Ikan Kuah Kuning</h3>
+            </div>
+        </a>
+
+        <!-- Sayur Sir-Sir -->
+        <a href="/makanan/sayur-sir-sir" class="makanan-link">
+            <div class="makanan-item">
+                <img src="{{ url_for('static', filename='files/sayur sir-sir.png') }}" alt="Sayur Sir-Sir">
+                <h3>Sayur Sir-Sir</h3>
+            </div>
+        </a>
+
+        <!-- Pisang Enbal -->
+        <a href="/makanan/pisang-enbal" class="makanan-link">
+            <div class="makanan-item">
+                <img src="{{ url_for('static', filename='files/pisang_enbal.png') }}" alt="Pisang Enbal">
+                <h3>Pisang Enbal</h3>
+            </div>
+        </a>
+
+        <!-- Lat / Anggur Laut -->
+        <a       href="/makanan/lat-anggur-laut" class="makanan-link">
+            <div class="makanan-item">
+                <img src="{{ url_for('static', filename='files/lat_anggur_laut.png') }}" alt="Lat/Anggur Laut">
+                <h3>Lat / Anggur Laut</h3>
+            </div>
+        </a>
+    </section>
+{% endblock %}

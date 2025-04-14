@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    {% block content %}{% endblock %} <!-- Konten dinamis di sini -->
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-col">
+                    <h4>Our Company</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/wisata">Wisata</a></li>
+                        <li><a href="/makanan">Makanan Khas Kei</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2025 Visit Kei. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<style>
+  .footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 70px 20px 20px;
+    text-align: center;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-col {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .footer-col h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: goldenrod;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-col ul li a:hover {
+    color: #fff;
+    transform: translateX(5px);
+  }
+
+  .social-links {
+    margin-top: 20px;
+  }
+
+  .social-links a {
+    display: inline-block;
+    font-size: 20px;
+    color: #bbb;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .social-links a:hover {
+    background: goldenrod;
+    color: #A1E3F9;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-col h4::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .footer-col ul li a:hover {
+      transform: none;
+      text-decoration: underline;
+    }
+  }
+
+</style>
+
+
+</body>
+</html>

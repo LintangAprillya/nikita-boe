@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+
+    <header class="hero">
+        <h1>Destinasi</h1>
+        <p>Beranda | Daftar Destinasi</p>
+    </header>
+
+    <div class="wisata-group">
+        <div class="wisata-item">
+            <img src="{{ url_for('static', filename='files/ngurtafur.png') }}" alt="Pantai Ngurtafur">
+             <div class="layer"></div>
+            <div class="info">
+            <h3>Pantai Ngurtafur</h3>
+            <p>Pantai unik dengan pasir putih yang membentang di tengah laut, menciptakan jalur alami yang memukau.</p>
+            <a href="#" class="btn">Selengkapnya</a>
+        </div>
+            </div>
+
+        <div class="wisata-item">
+            <img src="{{ url_for('static', filename='files/pulau_bair.png') }}" alt="Pulau Bair">
+             <div class="layer"></div>
+            <div class="info">
+            <h3>Pulau Bair</h3>
+            <p>Pulau kecil dengan perairan jernih dan tebing karst yang menyerupai keindahan Raja Ampat.</p>
+            <a href="#" class="btn">Selengkapnya</a>
+        </div>
+            </div>
+        <div class="wisata-item">
+            <img src="{{ url_for('static', filename='files/bukit_masbait.png') }}" alt="bukit_masbait">
+            <div class="layer"></div>
+            <div class="info">
+                <h3>Bukit Masbait</h3>
+                <p>Bukit tertinggi di Kei Kecil yang menjadi tempat ibadah dan menyajikan panorama indah dari puncaknya.</p>
+                 <a href="#" class="btn">Selengkapnya</a>
+            </div>
+        </div>
+
+        <div class="wisata-item">
+            <img src="{{ url_for('static', filename='files/Pantai Ohoidertawun.png') }}" alt="Pantai Ohoidertawun">
+            <div class="layer"></div>
+            <div class="info">
+                <h3>Pantai Ohoidertawun</h3>
+                <p>Pantai dengan pasir putih luas dan air laut yang tenang, cocok untuk berenang dan bersantai.</p>
+                 <a href="#" class="btn">Selengkapnya</a>
+            </div>
+        </div>
+
+        <div class="wisata-item">
+            <img src="{{ url_for('static', filename='files/ngurbloat.png') }}" alt="Pantai Ngurbloat">
+            <div class="layer"></div>
+            <div class="info">
+                <h3>Pantai Ngurbloat</h3>
+                <p>Dikenal sebagai pantai dengan pasir terhalus di dunia, sempurna untuk menikmati matahari terbenam.</p>
+                 <a href="#" class="btn">Selengkapnya</a>
+            </div>
+        </div>
+
+        <div class="wisata-item">
+            <img src="{{ url_for('static', filename='files/Goa_hawang.png') }}" alt="Goa Hawang">
+            <div class="layer"></div>
+            <div class="info">
+                <h3>Goa Hawang</h3>
+                <p>Gua dengan kolam air jernih yang dipercaya memiliki cerita mistis oleh masyarakat setempat.</p>
+                 <a href="#" class="btn">Selengkapnya</a>
+            </div>
+        </div>
+
+        <div class="wisata-item">
+            <img src="{{ url_for('static', filename='files/pantai_Nirun.png') }}" alt="Pantai Nirun">
+            <div class="layer"></div>
+            <div class="info">
+                <h3>Pantai Nirun</h3>
+                <p>Pantai tersembunyi dengan keindahan alami yang masih asri dan belum banyak terjamah wisatawan.</p>
+                <a href="#" class="btn">Selengkapnya</a>
+            </div>
+        </div>
+
+        <div class="wisata-item">
+            <img src="{{ url_for('static', filename='files/Air_terjun_Ad_Weraur.png') }}" alt="Air Terjun Ad Weraur">
+            <div class="layer"></div>
+            <div class="info">
+                <h3>Air Terjun Ad Weraur</h3>
+                <p>Air terjun eksotis di tengah hutan yang menawarkan suasana segar dan alami.</p>
+                 <a href="#" class="btn">Selengkapnya</a>
+            </div>
+        </div>
+
+        <div class="wisata-item">
+            <img src="{{ url_for('static', filename='files/Air_Terjun_Hoko.png') }}" alt="Air Terjun Hoko">
+            <div class="layer"></div>
+            <div class="info">
+                <h3>Air Terjun Hoko</h3>
+                <p>Air terjun bertingkat dengan air yang jernih dan pemandangan hijau yang menenangkan.</p>
+                 <a href="#" class="btn">Selengkapnya</a>
+            </div>
+        </div>
+
+        <div class="wisata-item">
+            <img src="{{ url_for('static', filename='files/Pantai_Ngur_Vat_Namsir.jpg') }}" alt="Pantai Ngur Vat Namsir">
+            <div class="layer"></div>
+            <div class="info">
+                <h3>Pantai Ngur Vat Namsir</h3>
+                <p>Pantai indah dengan hamparan pasir putih dan ombak yang tenang, cocok untuk menikmati keindahan laut.</p>
+                 <a href="#" class="btn">Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

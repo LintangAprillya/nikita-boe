@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+
+    <header>
+        <h1>{{ makanan.nama }}</h1>
+    </header>
+
+    <section class="makanan-container">
+        <div class="makanan-image">
+            <img src="{{ url_for('static', filename=makanan.gambar) }}" alt="{{ makanan.nama }}">
+        </div>
+        <div class="makanan-info">
+            <p>{{ makanan.deskripsi }}</p>
+            <h3>Bahan-Bahan:</h3>
+            <ul>
+                {% for bahan in makanan.bahan %}
+                    <li>{{ bahan }}</li>
+                {% endfor %}
+            </ul>
+            <h3>Cara Membuat:</h3>
+            <ol>
+                {% for langkah in makanan.tutorial %}
+                    <li>{{ langkah }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        <a href="/makanan">Kembali ke Daftar Makanan</a>
+    </footer>
+</body>
+</html>
+
+<style>
+    .makanan-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .makanan-image {
+        flex: 1;
+        max-width: 50%;
+    }
+    .makanan-image img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .makanan-info {
+        flex: 1;
+        max-width: 50%;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .makanan-info h3 {
+        color: #008080;
+    }
+    .makanan-info ol, .makanan-info ul {
+        padding-left: 20px;
+    }
+</style>
+{% endblock %}
